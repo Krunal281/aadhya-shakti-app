@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "41b2b925-af68-4664-a37b-8158dfa6e151",
+    "createdAt": "2026-05-26T10:50:27.240Z",
+    "updatedAt": "2026-05-26T10:50:27.240Z",
+    "date": "2026-05-26T10:50:27.240Z",
+    "supplierName": "Prahladbhai Aburoad",
+    "purchaseId": "1907ec48-1c55-439d-9244-797a74074881",
+    "cashAmountPaid": 0,
+    "upiAmountPaid": 30000,
+    "totalPaid": 30000,
+    "remainingCash": 28000,
+    "remainingUpi": 0,
+    "notes": "Cleared pending UPI"
+  },
+  {
+    "_id": "d3c38860-2680-47d4-b14b-5a116701fa6b",
+    "createdAt": "2026-05-26T10:50:49.838Z",
+    "updatedAt": "2026-05-26T10:50:49.838Z",
+    "date": "2026-05-26T00:00:00.000Z",
+    "supplierName": "Prahladbhai Aburoad",
+    "purchaseId": "09e7caff-f1ac-4556-8274-b1e1533d6051",
+    "cashAmountPaid": 1000,
+    "upiAmountPaid": 1600,
+    "totalPaid": 2600,
+    "remainingCash": 9000,
+    "remainingUpi": 14400,
+    "notes": "Payment for Invoice"
+  },
+  {
+    "_id": "47504f3e-479f-4d80-99b4-44a6252b4a22",
+    "createdAt": "2026-05-26T10:51:32.609Z",
+    "updatedAt": "2026-05-26T10:51:32.609Z",
+    "date": "2026-05-26T10:51:32.609Z",
+    "supplierName": "Prahladbhai Aburoad",
+    "purchaseId": "1907ec48-1c55-439d-9244-797a74074881",
+    "cashAmountPaid": 28000,
+    "upiAmountPaid": 0,
+    "totalPaid": 28000,
+    "remainingCash": 0,
+    "remainingUpi": 0,
+    "notes": "Cleared pending Cash"
+  },
+  {
+    "_id": "c30dc550-e5da-4c2e-aacf-637c7143d53e",
+    "createdAt": "2026-05-26T10:52:12.212Z",
+    "updatedAt": "2026-05-26T10:52:12.212Z",
+    "date": "2026-05-26T10:52:12.212Z",
+    "supplierName": "Prahladbhai Aburoad",
+    "purchaseId": "09e7caff-f1ac-4556-8274-b1e1533d6051",
+    "cashAmountPaid": 9000,
+    "upiAmountPaid": 0,
+    "totalPaid": 9000,
+    "remainingCash": 0,
+    "remainingUpi": 14400,
+    "notes": "Cleared pending Cash"
+  }
+]

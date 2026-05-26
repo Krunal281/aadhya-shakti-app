@@ -1,0 +1,132 @@
+[
+  {
+    "_id": "322776d0-7f45-4445-a7f0-4b2c4e5451ce",
+    "createdAt": "2026-05-26T09:54:54.916Z",
+    "updatedAt": "2026-05-26T10:04:47.089Z",
+    "supplierName": "Ambaji Stone Corp",
+    "date": "2026-05-10T00:00:00.000Z",
+    "gadiNumber": "RJ-27-GB-1122",
+    "items": [
+      {
+        "productName": "Ambaji Premium White Marble",
+        "sqft": 1200,
+        "pricePerSqft": 40,
+        "totalAmount": 48000
+      }
+    ],
+    "totalBillAmount": 48000,
+    "paymentMode": "Both",
+    "cashPaidAmount": 15000,
+    "upiPaidAmount": 10000,
+    "cashPendingAmount": 10000,
+    "upiPendingAmount": 13000,
+    "dueDate": "2026-06-15T00:00:00.000Z",
+    "paymentStatus": "Partial",
+    "notes": "Delivered in good condition."
+  },
+  {
+    "_id": "82797432-bf68-4b17-84e2-ec1d4d970fcd",
+    "createdAt": "2026-05-26T09:54:54.917Z",
+    "updatedAt": "2026-05-26T09:54:54.917Z",
+    "supplierName": "Rajasthan Granite Hub",
+    "date": "2026-05-14T00:00:00.000Z",
+    "gadiNumber": "RJ-14-GG-5566",
+    "items": [
+      {
+        "productName": "Desert Gold Granite",
+        "sqft": 1000,
+        "pricePerSqft": 55,
+        "totalAmount": 55000
+      }
+    ],
+    "totalBillAmount": 55000,
+    "paymentMode": "UPI",
+    "cashPaidAmount": 0,
+    "upiPaidAmount": 55000,
+    "cashPendingAmount": 0,
+    "upiPendingAmount": 0,
+    "paymentStatus": "Clear",
+    "notes": "Instant clearing via UPI."
+  },
+  {
+    "_id": "1907ec48-1c55-439d-9244-797a74074881",
+    "createdAt": "2026-05-26T10:10:27.591Z",
+    "updatedAt": "2026-05-26T10:51:32.611Z",
+    "supplierName": "Prahladbhai Aburoad",
+    "date": "2026-05-26T00:00:00.000Z",
+    "gadiNumber": "",
+    "items": [
+      {
+        "productName": "ruff granite",
+        "sqft": 1000,
+        "pricePerSqft": 28,
+        "totalAmount": 28000
+      },
+      {
+        "productName": "Makrana Albeta Marble",
+        "sqft": 500,
+        "pricePerSqft": 60,
+        "totalAmount": 30000
+      }
+    ],
+    "totalBillAmount": 58000,
+    "paymentStatus": "Clear",
+    "paymentMode": "Both",
+    "cashPaidAmount": 28000,
+    "upiPaidAmount": 30000,
+    "cashPendingAmount": 0,
+    "upiPendingAmount": 0,
+    "dueDate": null,
+    "notes": ""
+  },
+  {
+    "_id": "09e7caff-f1ac-4556-8274-b1e1533d6051",
+    "createdAt": "2026-05-26T10:12:21.009Z",
+    "updatedAt": "2026-05-26T10:52:12.217Z",
+    "supplierName": "Prahladbhai Aburoad",
+    "date": "2026-05-05T00:00:00.000Z",
+    "gadiNumber": "",
+    "items": [
+      {
+        "productName": "ruff granite",
+        "sqft": 1200,
+        "pricePerSqft": 30,
+        "totalAmount": 36000
+      }
+    ],
+    "totalBillAmount": 36000,
+    "paymentStatus": "Partial",
+    "paymentMode": "Both",
+    "cashPaidAmount": 10000,
+    "upiPaidAmount": 11600,
+    "cashPendingAmount": 0,
+    "upiPendingAmount": 14400,
+    "dueDate": null,
+    "notes": ""
+  },
+  {
+    "_id": "edb8a7e6-1712-4a87-a1b0-842fa4aa3cc3",
+    "createdAt": "2026-05-26T10:49:55.394Z",
+    "updatedAt": "2026-05-26T10:49:55.394Z",
+    "supplierName": "Ambaji Stone Corp",
+    "date": "2026-05-26T00:00:00.000Z",
+    "gadiNumber": "",
+    "items": [
+      {
+        "productName": "tile pro ",
+        "sqft": 100,
+        "pricePerSqft": 300,
+        "totalAmount": 30000
+      }
+    ],
+    "totalBillAmount": 30000,
+    "paymentStatus": "Pending",
+    "paymentMode": "Both",
+    "cashPaidAmount": 0,
+    "upiPaidAmount": 0,
+    "cashPendingAmount": 15000,
+    "upiPendingAmount": 15000,
+    "dueDate": null,
+    "notes": ""
+  }
+]

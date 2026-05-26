@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "3e5aeff4-7a53-4345-ad49-48d3387cbe8d",
+    "createdAt": "2026-05-26T09:54:54.915Z",
+    "updatedAt": "2026-05-26T10:49:55.417Z",
+    "name": "Ambaji Stone Corp",
+    "phone": "9876543210",
+    "address": "Ambaji Industrial Area, Gujarat",
+    "notes": "Main supplier for white marble blocks.",
+    "totalPurchaseAmount": 78000,
+    "totalPaidAmount": 25000,
+    "remainingAmount": 53000,
+    "remainingCashAmount": 25000,
+    "remainingUpiAmount": 28000
+  },
+  {
+    "_id": "c87ea95a-71a7-40f0-9c2d-659c5f9a7499",
+    "createdAt": "2026-05-26T09:54:54.915Z",
+    "updatedAt": "2026-05-26T09:54:54.921Z",
+    "name": "Rajasthan Granite Hub",
+    "phone": "8765432109",
+    "address": "Kishangarh Bypass, Rajasthan",
+    "notes": "Best rates for Desert Gold and Black Granite.",
+    "totalPurchaseAmount": 55000,
+    "totalPaidAmount": 0,
+    "remainingAmount": 0,
+    "remainingCashAmount": 0,
+    "remainingUpiAmount": 0
+  },
+  {
+    "_id": "222baf77-6a60-4a27-922e-8cec0bb0e8f7",
+    "createdAt": "2026-05-26T09:54:54.915Z",
+    "updatedAt": "2026-05-26T09:54:54.921Z",
+    "name": "Makrana Heritage Marbles",
+    "phone": "7654321098",
+    "address": "Makrana Marble Market, Rajasthan",
+    "notes": "Premium albeta and kumari marble.",
+    "totalPurchaseAmount": 0,
+    "totalPaidAmount": 0,
+    "remainingAmount": 0,
+    "remainingCashAmount": 0,
+    "remainingUpiAmount": 0
+  },
+  {
+    "_id": "6c78774f-18f6-4a1c-a4b6-b7e0cb1f7bdd",
+    "createdAt": "2026-05-26T10:07:09.411Z",
+    "updatedAt": "2026-05-26T10:52:12.220Z",
+    "name": "Prahladbhai Aburoad",
+    "phone": "9313052197",
+    "address": "Aburoad palanpur",
+    "notes": "",
+    "totalPurchaseAmount": 94000,
+    "totalPaidAmount": 79600,
+    "remainingAmount": 14400,
+    "remainingCashAmount": 0,
+    "remainingUpiAmount": 14400
+  }
+]

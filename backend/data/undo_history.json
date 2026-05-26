@@ -1,0 +1,53 @@
+[
+  {
+    "_id": "ba85c523-cf02-46d6-82ea-c4d5cabac20d",
+    "createdAt": "2026-05-26T10:50:27.241Z",
+    "updatedAt": "2026-05-26T10:50:27.241Z",
+    "actionType": "PAYMENT_CLEAR",
+    "targetCollection": "Purchase",
+    "targetId": "1907ec48-1c55-439d-9244-797a74074881",
+    "previousState": {
+      "cashPendingAmount": 28000,
+      "upiPendingAmount": 30000,
+      "cashPaidAmount": 0,
+      "upiPaidAmount": 0,
+      "paymentStatus": "Pending",
+      "paymentId": "41b2b925-af68-4664-a37b-8158dfa6e151"
+    },
+    "description": "Cleared pending UPI for Bill Reference: 1907ec48"
+  },
+  {
+    "_id": "53de6d4d-fc61-49b7-a9db-ee3a117414f5",
+    "createdAt": "2026-05-26T10:51:32.610Z",
+    "updatedAt": "2026-05-26T10:51:32.610Z",
+    "actionType": "PAYMENT_CLEAR",
+    "targetCollection": "Purchase",
+    "targetId": "1907ec48-1c55-439d-9244-797a74074881",
+    "previousState": {
+      "cashPendingAmount": 28000,
+      "upiPendingAmount": 0,
+      "cashPaidAmount": 0,
+      "upiPaidAmount": 30000,
+      "paymentStatus": "Partial",
+      "paymentId": "47504f3e-479f-4d80-99b4-44a6252b4a22"
+    },
+    "description": "Cleared pending Cash for Bill Reference: 1907ec48"
+  },
+  {
+    "_id": "ce4a8201-b55b-474b-8aa6-9968bd8d3f6a",
+    "createdAt": "2026-05-26T10:52:12.214Z",
+    "updatedAt": "2026-05-26T10:52:12.214Z",
+    "actionType": "PAYMENT_CLEAR",
+    "targetCollection": "Purchase",
+    "targetId": "09e7caff-f1ac-4556-8274-b1e1533d6051",
+    "previousState": {
+      "cashPendingAmount": 9000,
+      "upiPendingAmount": 14400,
+      "cashPaidAmount": 1000,
+      "upiPaidAmount": 11600,
+      "paymentStatus": "Partial",
+      "paymentId": "c30dc550-e5da-4c2e-aacf-637c7143d53e"
+    },
+    "description": "Cleared pending Cash for Bill Reference: 09e7caff"
+  }
+]
