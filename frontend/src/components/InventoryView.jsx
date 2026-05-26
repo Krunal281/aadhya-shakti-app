@@ -33,9 +33,44 @@ export default function InventoryView({ products, suppliers, fetchProducts, fetc
   const handlePhotoUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
+      if (!file.type.startsWith('image/')) {
+        addToast('Please select a valid image file.', 'error');
+        return;
+      }
+
       const reader = new FileReader();
-      reader.onloadend = () => {
-        setFormData(prev => ({ ...prev, photo: reader.result }));
+      reader.onload = (event) => {
+        const img = new Image();
+        img.onload = () => {
+          // Compress using offscreen Canvas
+          const canvas = document.createElement('canvas');
+          let width = img.width;
+          let height = img.height;
+
+          // Max size 600px width or height
+          const MAX_SIZE = 600;
+          if (width > height) {
+            if (width > MAX_SIZE) {
+              height *= MAX_SIZE / width;
+              width = MAX_SIZE;
+            }
+          } else {
+            if (height > MAX_SIZE) {
+              width *= MAX_SIZE / height;
+              height = MAX_SIZE;
+            }
+          }
+
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+
+          // Convert to compressed base64 JPEG (70% quality)
+          const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
+          setFormData(prev => ({ ...prev, photo: compressedDataUrl }));
+        };
+        img.src = event.target.result;
       };
       reader.readAsDataURL(file);
     }
