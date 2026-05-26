@@ -7,9 +7,11 @@ exports.getProducts = async (req, res) => {
     const products = await Product.find({});
     // Add a low stock warning flag dynamically
     const productsWithWarning = products.map(p => {
-      const isLowStock = p.availableStockSqft < 500; // Low stock warning threshold: 500 sqft
+      // Safely convert Mongoose document to plain object, fallback to p if already plain
+      const pObj = typeof p.toObject === 'function' ? p.toObject() : p;
+      const isLowStock = (pObj.availableStockSqft || 0) < 500; // Low stock warning threshold: 500 sqft
       return {
-        ...p,
+        ...pObj,
         isLowStock
       };
     });
