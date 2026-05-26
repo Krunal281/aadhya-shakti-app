@@ -1,4 +1,15 @@
-const API_URL = 'https://aadhya-shakti-backend.onrender.com';
+// Automatically resolve API URL based on environment
+const getApiUrl = () => {
+  // If running locally, connect to local server
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    return 'http://localhost:5000/api';
+  }
+  // When running on Netlify, connect to your live Render backend URL.
+  // Replace the URL below with your actual deployed Render backend API URL!
+  return 'https://aadhya-shakti-backend.onrender.com/api'; 
+};
+
+const API_URL = getApiUrl();
 
 const handleResponse = async (response) => {
   const data = await response.json();

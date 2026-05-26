@@ -34,6 +34,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [toasts, setToasts] = useState([]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dbStatus, setDbStatus] = useState('Checking...');
 
   // Add Toast Notification
   const addToast = (message, type = 'info') => {
@@ -94,13 +95,20 @@ export default function App() {
 
   const fetchAllData = async () => {
     setLoading(true);
-    await Promise.all([
-      fetchDashboardStats(),
-      fetchProducts(),
-      fetchSuppliers(),
-      fetchPurchases(),
-      fetchSales()
-    ]);
+    try {
+      await Promise.all([
+        api.getDashboard().then(res => setDashboardStats(res.data)),
+        api.getProducts().then(res => setProducts(res.data)),
+        api.getSuppliers().then(res => setSuppliers(res.data)),
+        api.getPurchases().then(res => setPurchases(res.data)),
+        api.getSales().then(res => setSales(res.data))
+      ]);
+      setDbStatus('Connected');
+    } catch (err) {
+      console.error(err);
+      setDbStatus('Offline / Connection Error');
+      addToast('Cannot connect to the central database server. Check your backend URL or server status.', 'error');
+    }
     setLoading(false);
   };
 
@@ -256,8 +264,18 @@ export default function App() {
           </button>
           
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span className="badge clear" style={{ textTransform: 'none', fontSize: '0.8rem', fontWeight: '500' }}>
-              Database: {api ? 'Connected (JSON Fallback enabled)' : 'Offline'}
+            <span 
+              className="badge clear" 
+              style={{ 
+                textTransform: 'none', 
+                fontSize: '0.8rem', 
+                fontWeight: '600',
+                backgroundColor: dbStatus === 'Connected' ? 'rgba(74, 222, 128, 0.1)' : 'rgba(239, 68, 68, 0.1)',
+                color: dbStatus === 'Connected' ? 'var(--color-success)' : 'var(--color-danger)',
+                border: dbStatus === 'Connected' ? '1px solid rgba(74, 222, 128, 0.2)' : '1px solid rgba(239, 68, 68, 0.2)'
+              }}
+            >
+              Database: {dbStatus}
             </span>
           </div>
 
