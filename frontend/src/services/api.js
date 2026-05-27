@@ -24,7 +24,12 @@ export const api = {
   getDashboard: () => fetch(`${API_URL}/dashboard`).then(handleResponse),
 
   // Products
-  getProducts: () => fetch(`${API_URL}/products`).then(handleResponse),
+  getProducts: () => fetch(`${API_URL}/products`).then(handleResponse).then(res => {
+    if (res && res.data && Array.isArray(res.data)) {
+      res.data = res.data.map(p => (p && p._doc) ? { ...p._doc, isLowStock: p.isLowStock } : p);
+    }
+    return res;
+  }),
   createProduct: (data) => fetch(`${API_URL}/products`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
